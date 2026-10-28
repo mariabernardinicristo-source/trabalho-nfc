@@ -1,0 +1,175 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Meu Portfólio | Meu cantinho</title>
+    <meta name="description" content="Conheça meu portfólio pessoal.">
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="header">
+        <a href="#inicio" class="logo">meu cantinho<span>.</span></a>
+
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Abrir menu" aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="nav" id="nav">
+            <a href="#inicio">Início</a>
+            <a href="#sobre">Sobre mim</a>
+            <a href="#habilidades">Habilidades</a>
+            <a href="#projetos">Projetos</a>
+            <a href="#contato">Contato</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero" id="inicio">
+            <div class="hero-text">
+                <p class="tag">✨ Seja bem-vindo(a) ao meu mundo!</p>
+
+                <h1>Oi, eu sou <span>Maria Sophia</span> 💗</h1>
+
+                <h2>Uma pessoa cheia de sonhos e criatividade.</h2>
+
+                <p class="description">
+                    Este é meu cantinho na internet!
+                    Aqui você vai conhecer um pouco sobre mim,
+                    minhas ideias, meus interesses e meus projetos.
+                </p>
+
+                <a href="#sobre" class="button">Conheça minha história ↓</a>
+            </div>
+
+            <div class="hero-decoration">
+                <div class="photo-placeholder">
+                <img src="mikasa.imagem.jfif" alt="Foto de perfil do usuário" class="avatar">
+                </div>
+                <span class="sparkle sparkle-one">✦</span>
+                <span class="sparkle sparkle-two">♡</span>
+                <span class="sparkle sparkle-three">✧</span>
+            </div>
+        </section>
+
+        <section class="section about" id="sobre">
+            <p class="tag">♡ Um pouquinho de mim</p>
+            <h2>Sobre <span>mim</span></h2>
+
+            <div class="about-card">
+                <p>
+                    Oii! Sou Maria Sophia, tenho 16 anos
+                    e estou sempre descobrindo coisas novas.
+                    Gosto de ouvir músicas, amo gatos 
+                    e tenho muitos sonhos que quero realizar.
+                </p>
+
+                <p>
+                    Sou uma pessoa extrovertida e acredito
+                    que cada experiência é uma oportunidade
+                    de aprender, crescer e me tornar alguém melhor.
+                </p>
+
+                <p>
+                    Meu objetivo é fazer minha faculdade dos onhos.
+                    Este portfólio é um pedacinho de quem eu sou! 💕
+                </p>
+            </div>
+        </section>
+
+        <section class="section skills" id="habilidades">
+            <p class="tag">✧ Coisas que fazem parte de mim</p>
+            <h2>Minhas <span>habilidades</span></h2>
+
+            <div class="card-grid">
+                <article class="info-card">
+                    <span class="card-icon">🎨</span>
+                    <h3>Criatividade</h3>
+                    <p>Adoro imaginar ideias e criar coisas diferentes.</p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">💻</span>
+                    <h3>Tecnologia</h3>
+                    <p>Tenho interesse em aprender e explorar o mundo digital.</p>
+                </article>
+
+                <article class="info-card">
+                    <span class="card-icon">🌷</span>
+                    <h3>Aprendizado</h3>
+                    <p>Estou sempre buscando aprender algo novo.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section projects" id="projetos">
+            <p class="tag">✦ Minhas ideias em ação</p>
+            <h2>Meus <span>projetos</span></h2>
+
+            <div class="card-grid">
+                <article class="project-card">
+                    <div class="project-art art-one">🌸</div>
+                    <div class="project-content">
+                        <h3>Projeto favorito</h3>
+                        <p>Conte aqui sobre algo que você criou ou realizou.</p>
+                        <span class="project-label">Meu projeto #01</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-art art-two">🦋</div>
+                    <div class="project-content">
+                        <h3>Uma nova ideia</h3>
+                        <p>Mostre um trabalho, desenho, site ou atividade sua.</p>
+                        <span class="project-label">Meu projeto #02</span>
+                    </div>
+                </article>
+
+                <article class="project-card">
+                    <div class="project-art art-three">⭐</div>
+                    <div class="project-content">
+                        <h3>Meu próximo sonho</h3>
+                        <p>Apresente algo que você deseja desenvolver no futuro.</p>
+                        <span class="project-label">Em construção</span>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <section class="section contact" id="contato">
+            <p class="tag">💌 Vamos conversar?</p>
+            <h2>Entre em <span>contato</span></h2>
+
+            <p>
+                Quer conhecer mais sobre mim ou conversar
+                sobre meus projetos? Me encontre por aqui!
+            </p>
+
+            <a class="button"
+               href="https://www.instagram.com/"
+               target="_blank"
+               rel="noopener noreferrer">
+                Meu Instagram ↗
+            </a>
+            <p class="small-note">
+                Troque o link acima pelo endereço do seu perfil.
+            </p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>Feito com 💗 por <span>Seu Nome</span></p>
+        <p>© <span id="year"></span> — Todos os direitos reservados.</p>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top"
+            aria-label="Voltar ao topo">↑</button>
+
+</body>
+</html>

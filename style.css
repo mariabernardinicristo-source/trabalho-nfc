@@ -1,0 +1,473 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --pink: #ed8eae;
+    --pink-dark: #cf648b;
+    --pink-light: #fff0f5;
+    --purple: #a58bc7;
+    --text: #493d49;
+    --muted: #796d79;
+    --white: #ffffff;
+    --shadow: 0 10px 35px rgba(170, 104, 135, 0.12);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #fffafd;
+    color: var(--text);
+    line-height: 1.7;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 8%;
+    background: rgba(255, 250, 253, 0.94);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    backdrop-filter: blur(12px);
+    border-bottom: 1px solid #f8e6ee;
+}
+
+.logo {
+    font-size: 1.35rem;
+    font-weight: 800;
+}
+
+.logo span,
+.footer span {
+    color: var(--pink-dark);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.nav a {
+    font-size: 0.9rem;
+    transition: color 0.3s;
+}
+
+.nav a:hover {
+    color: var(--pink-dark);
+}
+
+.menu-toggle {
+    display: none;
+    border: none;
+    background: none;
+    color: var(--text);
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.hero {
+    min-height: 85vh;
+    padding: 80px 10%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    background:
+        radial-gradient(circle at 85% 20%, #fce0eb 0, transparent 28%),
+        radial-gradient(circle at 10% 90%, #f0e6ff 0, transparent 30%);
+}
+
+.hero-text {
+    max-width: 600px;
+}
+
+.tag {
+    color: var(--pink-dark);
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.hero h1 {
+    font-size: clamp(2.5rem, 5vw, 4.3rem);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span,
+.section h2 span {
+    color: var(--pink-dark);
+}
+
+.hero h2 {
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.description {
+    color: var(--muted);
+    max-width: 520px;
+    margin-bottom: 30px;
+}
+
+.button {
+    display: inline-block;
+    background: var(--pink-dark);
+    color: white;
+    padding: 13px 25px;
+    border-radius: 30px;
+    font-weight: 600;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.button:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 20px #cf648b44;
+}
+
+.hero-decoration {
+    position: relative;
+    flex-shrink: 0;
+    margin: 20px;
+}
+
+.photo-placeholder {
+    width: 290px;
+    height: 350px;
+    border: 3px solid white;
+    border-radius: 48% 48% 25px 25px;
+    background: linear-gradient(145deg, #f7ccdc, #e7d8fa);
+    box-shadow: var(--shadow);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: var(--pink-dark);
+}
+
+.photo-placeholder span {
+    font-size: 4rem;
+}
+
+.sparkle {
+    position: absolute;
+    color: var(--pink-dark);
+    font-size: 2rem;
+    animation: float 3s ease-in-out infinite;
+}
+
+.sparkle-one {
+    top: 5%;
+    left: -25px;
+}
+
+.sparkle-two {
+    right: -25px;
+    top: 35%;
+    font-size: 3rem;
+}
+
+.sparkle-three {
+    bottom: 5%;
+    left: -30px;
+}
+
+.section {
+    padding: 95px 10%;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: clamp(2rem, 4vw, 2.8rem);
+    margin-bottom: 35px;
+}
+
+.about-card {
+    max-width: 850px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border: 1px solid #f7e2eb;
+    border-radius: 25px;
+    box-shadow: var(--shadow);
+    text-align: left;
+}
+
+.about-card p + p {
+    margin-top: 18px;
+}
+
+.skills {
+    background: var(--pink-light);
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 25px;
+    margin-top: 35px;
+    text-align: left;
+}
+
+.info-card,
+.project-card {
+    background: white;
+    border: 1px solid #f5e3ec;
+    border-radius: 22px;
+    overflow: hidden;
+    box-shadow: var(--shadow);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.info-card {
+    padding: 30px;
+}
+
+.info-card:hover,
+.project-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 18px 40px #d59bb522;
+}
+
+.card-icon {
+    font-size: 2.4rem;
+}
+
+.info-card h3,
+.project-content h3 {
+    margin: 12px 0 8px;
+}
+
+.info-card p,
+.project-content p,
+.contact > p {
+    color: var(--muted);
+    font-size: 0.93rem;
+}
+
+.project-art {
+    height: 180px;
+    display: grid;
+    place-items: center;
+    font-size: 4rem;
+}
+
+.art-one {
+    background: #ffe3ed;
+}
+
+.art-two {
+    background: #eae1fa;
+}
+
+.art-three {
+    background: #fff0ce;
+}
+
+.project-content {
+    padding: 24px;
+}
+
+.project-label {
+    display: inline-block;
+    margin-top: 15px;
+    color: var(--pink-dark);
+    background: var(--pink-light);
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+.contact {
+    background: linear-gradient(135deg, #fff0f5, #f3edff);
+}
+
+.contact > p {
+    max-width: 520px;
+    margin: 0 auto 25px;
+}
+
+.contact .small-note {
+    font-size: 0.75rem;
+    margin-top: 15px;
+}
+
+.footer {
+    padding: 28px 10%;
+    text-align: center;
+    font-size: 0.85rem;
+    background: white;
+    border-top: 1px solid #f5e3ec;
+}
+
+.footer p + p {
+    color: var(--muted);
+    font-size: 0.75rem;
+    margin-top: 5px;
+}
+
+.back-to-top {
+    position: fixed;
+    right: 25px;
+    bottom: 25px;
+    width: 45px;
+    height: 45px;
+    border: none;
+    border-radius: 50%;
+    background: var(--pink-dark);
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(10px);
+    transition: 0.3s;
+    z-index: 90;
+}
+
+.back-to-top.visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-12px);
+    }
+}
+
+@media (max-width: 900px) {
+    .hero {
+        padding: 70px 7%;
+        gap: 30px;
+    }
+
+    .photo-placeholder {
+        width: 230px;
+        height: 290px;
+    }
+
+    .nav {
+        gap: 14px;
+    }
+
+    .card-grid {
+        gap: 15px;
+    }
+}
+
+@media (max-width: 700px) {
+    .header {
+        padding: 17px 6%;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 20px 6%;
+        background: #fffafd;
+        border-bottom: 1px solid #f5e3ec;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
+    }
+
+    .nav.open {
+        display: flex;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 65px 7%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-text {
+        order: 1;
+    }
+
+    .hero-decoration {
+        order: 0;
+    }
+
+    .photo-placeholder {
+        width: 220px;
+        height: 250px;
+    }
+
+    .description {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .section {
+        padding: 70px 7%;
+    }
+
+    .about-card {
+        padding: 25px;
+    }
+
+    .card-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .info-card {
+        padding: 25px;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation: none !important;
+        transition: none !important;
+    }
+}
+.photo-placeholder {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%; /* Deixa o container redondo */
+    overflow: hidden;   /* Esconde tudo o que passar do limite do círculo */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 4px solid #ffb6c1; /* Uma bordinha rosinha delicada (opcional) */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.08); /* Uma sombra suave */
+    background-color: #fff0f5; /* Cor de fundo caso a imagem demore a carregar */
+}
+.avatar {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Faz a imagem cobrir o espaço sem perder a proporção */
+}
